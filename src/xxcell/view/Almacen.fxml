@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="675.0" prefWidth="988.0" style="-fx-background-color: #9ACA87;" stylesheets="@../resources/sidemenu.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.AlmacenController">
+   <children>
+      <JFXButton fx:id="AgregProd" accessibleText="agregar" layoutX="1.0" layoutY="1.0" maxHeight="1.7976931348623157E308" onAction="#AddAction" prefHeight="160.0" prefWidth="210.0" ripplerFill="#733380" style="-fx-background-color: #47ABCC;" styleClass="text-button" text="Agregar Producto" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Modificar" accessibleText="modificar" layoutX="311.0" layoutY="1.0" maxHeight="1.7976931348623157E308" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #F4BA51;" styleClass="text-button" text="Modificar/Eliminar" textFill="WHITE" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnEntradas" layoutX="621.0" layoutY="1.0" maxHeight="1.7976931348623157E308" onAction="#ActionEntradas" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #641261;" styleClass="text-button" text="Entradas" textFill="WHITE" AnchorPane.leftAnchor="650.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRespaldar" layoutX="931.0" layoutY="1.0" maxHeight="1.7976931348623157E308" onAction="#ActionRespaldo" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #d00d7b;" styleClass="text-button" text="Modificar Precios" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="310.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnGaleria" accessibleText="Galeria" layoutX="360.0" layoutY="310.0" onAction="#ActionGaleria" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #E97451;" styleClass="text-button" text="Galeria" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="310.0" />
+      <JFXButton fx:id="btnGeneraCodigoPng" layoutX="660.0" layoutY="302.0" onAction="#CrearCodigosPng" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #4D8C57;" styleClass="text-button" text="Generar Código de Barras" AnchorPane.leftAnchor="650.0" AnchorPane.topAnchor="310.0" />
+      <JFXButton layoutX="909.0" layoutY="622.0" onAction="#ActionAgregadoRapido" style="-fx-background-color: #CD607E;" text="Agregado Rapido" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+   </children>
+</AnchorPane>

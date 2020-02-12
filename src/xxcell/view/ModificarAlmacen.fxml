@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #FDD7E4;" stylesheets="@../resources/AgregarProducto.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.ModificarAlmacenController">
+   <top>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="buscar" layoutX="14.0" layoutY="14.0" maxWidth="246.0" minWidth="246.0" prefHeight="30.0" prefWidth="250.0" promptText="Producto" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="15.0" />
+            <JFXComboBox fx:id="cmbMarca" layoutX="25.0" layoutY="42.0" prefHeight="25.0" prefWidth="138.0" promptText="Marca" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="60.0" />
+            <JFXComboBox fx:id="cmbTipo" layoutX="223.0" layoutY="60.0" prefHeight="25.0" prefWidth="155.0" promptText="Tipo" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="385.0" AnchorPane.topAnchor="60.0" />
+            <JFXButton fx:id="filtrar" alignment="CENTER" layoutX="585.0" layoutY="41.0" prefWidth="70.0" style="-fx-background-color: #FC80A5;" styleClass="text-button" text="Filtrar" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="60.0" />
+            <JFXButton fx:id="reset" layoutX="1308.0" layoutY="48.0" prefWidth="70.0" style="-fx-background-color: #FC80A5;" styleClass="text-button" text="Reiniciar" textFill="#eeeeee" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="50.0" />
+            <JFXComboBox fx:id="cmbModelo" layoutX="470.0" layoutY="62.0" prefHeight="25.0" prefWidth="155.0" promptText="Modelo" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="200.0" />
+            <JFXComboBox fx:id="cmbIdentificador" layoutX="934.0" layoutY="62.0" prefHeight="25.0" prefWidth="155.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="570.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="Modificar" layoutX="40.0" layoutY="4.0" style="-fx-background-color: #FC80A5;" styleClass="text-button" text="Modificar" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+            <JFXButton fx:id="Eliminar" layoutX="300.0" layoutY="8.0" style="-fx-background-color: #FF4466;" styleClass="text-button" text="Eliminar" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="IDTxt" layoutX="185.0" promptText="ID" AnchorPane.topAnchor="20.0" />
+            <JFXTextField fx:id="MarcaTxt" layoutX="185.0" layoutY="40.0" promptText="Marca" AnchorPane.topAnchor="70.0" />
+            <JFXTextField fx:id="ModeloTxt" layoutX="184.0" layoutY="80.0" promptText="Modelo" AnchorPane.topAnchor="120.0" />
+            <JFXTextField fx:id="Nomtxt" layoutX="185.0" layoutY="120.0" promptText="Identificador " AnchorPane.topAnchor="170.0" />
+            <JFXTextField fx:id="Tipotxt" layoutX="185.0" layoutY="160.0" promptText="Tipo" AnchorPane.topAnchor="220.0" />
+            <JFXTextField fx:id="PrecPtxt" layoutX="185.0" layoutY="200.0" promptText="Precio Público" AnchorPane.topAnchor="270.0" />
+            <JFXTextField fx:id="PreDtxt" layoutX="188.0" layoutY="240.0" promptText="Precio distribuidor" AnchorPane.topAnchor="320.0" />
+            <TextField fx:id="TFL127" layoutX="15.0" layoutY="345.0" prefHeight="25.0" prefWidth="90.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="445.0" />
+            <TextField fx:id="TFL58" layoutX="145.0" layoutY="345.0" prefHeight="25.0" prefWidth="90.0" AnchorPane.topAnchor="445.0" />
+            <TextField fx:id="TFL64" layoutX="275.0" layoutY="345.0" prefHeight="25.0" prefWidth="90.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="445.0" />
+            <JFXTextArea fx:id="DescTxt" layoutX="14.0" layoutY="379.0" maxWidth="353.0" minWidth="353.0" prefHeight="74.0" prefWidth="353.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="500.0" />
+            <Label layoutX="50.0" layoutY="5.0" text="Id de Producto" AnchorPane.topAnchor="20.0" />
+            <Label layoutX="50.0" layoutY="45.0" text="Marca de Celular" AnchorPane.topAnchor="70.0" />
+            <Label layoutX="50.0" layoutY="85.0" text="Modelo de Celular" AnchorPane.topAnchor="120.0" />
+            <Label layoutX="50.0" layoutY="125.0" text="Identificador" AnchorPane.topAnchor="170.0" />
+            <Label layoutX="50.0" layoutY="165.0" text="Tipo de Producto" AnchorPane.topAnchor="220.0" />
+            <Label layoutX="50.0" layoutY="205.0" text="Precio a público" AnchorPane.topAnchor="270.0" />
+            <Label layoutX="50.0" layoutY="245.0" text="Precio a distribuidor" AnchorPane.topAnchor="320.0" />
+            <Label layoutX="50.0" layoutY="285.0" text="Cantidad de Mercancia" AnchorPane.topAnchor="370.0" />
+            <Label layoutX="35.0" layoutY="325.0" text="Local 127" AnchorPane.topAnchor="420.0" />
+            <Label layoutX="170.0" layoutY="325.0" text="Local 58" AnchorPane.topAnchor="420.0" />
+            <Label layoutX="300.0" layoutY="325.0" text="Local 64" AnchorPane.topAnchor="420.0" />
+            <Label fx:id="lblEID" layoutY="25.0" prefHeight="10.0" prefWidth="180.0" textFill="RED" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="40.0" />
+            <Label fx:id="lblEMarca" layoutX="1.0" layoutY="65.0" prefHeight="10.0" prefWidth="180.0" textFill="RED" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="90.0" />
+            <Label fx:id="lblEModelo" layoutX="1.0" layoutY="105.0" prefHeight="10.0" prefWidth="180.0" textFill="RED" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="140.0" />
+            <Label fx:id="lbl127Dispon" layoutX="17.0" layoutY="475.0" prefHeight="17.0" prefWidth="37.0" textFill="#c446e0" AnchorPane.topAnchor="475.0" />
+            <Label fx:id="lbl58Dispon" layoutX="145.0" layoutY="475.0" prefHeight="17.0" prefWidth="37.0" textFill="#c446e0" AnchorPane.topAnchor="475.0" />
+            <Label fx:id="lbl64Dispon" layoutX="278.0" layoutY="475.0" prefHeight="17.0" prefWidth="37.0" textFill="#c446e0" AnchorPane.topAnchor="475.0" />
+            <Label fx:id="lblESum" layoutX="13.0" layoutY="470.0" prefHeight="15.0" prefWidth="350.0" textFill="RED" AnchorPane.topAnchor="475.0" />
+            <Label fx:id="lblEnumero" layoutX="15.0" layoutY="387.0" prefHeight="15.0" prefWidth="350.0" textFill="RED" AnchorPane.topAnchor="475.0" />
+            <Label fx:id="lblDispon" layoutX="181.0" layoutY="365.0" prefHeight="17.0" prefWidth="164.0" textFill="#c446e0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <TableView fx:id="Tabla" style="-fx-background-color: #FC80A5;" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="IDCol" text="ID" />
+            <TableColumn fx:id="ModCol" text="Modelo" />
+            <TableColumn fx:id="NomCol" prefWidth="91.0" text="Identificador" />
+            <TableColumn fx:id="MarcaCol" prefWidth="64.0" text="Marca" />
+            <TableColumn fx:id="TipoCol" prefWidth="75.0" text="Tipo" />
+            <TableColumn fx:id="PrPubCol" prefWidth="75.0" text="Precio Pub." />
+            <TableColumn fx:id="PrDisCol" prefWidth="75.0" text="Precio Dist" />
+            <TableColumn fx:id="DispCol" prefWidth="75.0" text="Disponibilidad" />
+            <TableColumn fx:id="L58Col" prefWidth="75.0" text="Local 58" />
+            <TableColumn fx:id="L64Col" prefWidth="75.0" text="Local 64" />
+            <TableColumn fx:id="L127Col" prefWidth="75.0" text="Local 127" />
+         </columns>
+      </TableView>
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageViewFoto" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+               <image>
+                  <Image url="@../Images/producto-sin-foto.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnAddFoto" layoutX="53.0" layoutY="225.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #FC80A5;" styleClass="text-button" text="Galeria" textFill="WHITE" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+            <JFXButton fx:id="btnEliminarFoto" layoutX="74.0" layoutY="275.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #FF4466;" styleClass="text-button" text="Eliminar" textFill="WHITE" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+            <JFXButton fx:id="btnResetFoto" layoutX="38.0" layoutY="450.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #FC80A5;" styleClass="text-button" text="Reiniciar Imagen" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Label fx:id="lblErrorImagen" layoutX="20.0" layoutY="381.0" prefHeight="17.0" prefWidth="167.0" textFill="#ff0606" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

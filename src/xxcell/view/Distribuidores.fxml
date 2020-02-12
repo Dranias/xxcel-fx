@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="804.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.DistribuidoresController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="13.0" prefHeight="774.0" prefWidth="445.0" style="-fx-background-color: #e1e6ff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXTextField fx:id="txtNombre" layoutX="163.0" layoutY="35.0" maxWidth="262.0" minWidth="253.0" prefHeight="30.0" prefWidth="260.0" promptText="Nombre (S)" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="20.0" />
+            <JFXTextField fx:id="txtApellido" layoutX="169.0" layoutY="105.0" maxWidth="262.0" minWidth="262.0" prefHeight="30.0" prefWidth="260.0" promptText="Apellidos" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="80.0" />
+            <JFXTextField fx:id="txtTelefono" layoutX="169.0" layoutY="175.0" maxWidth="262.0" minWidth="262.0" prefHeight="30.0" prefWidth="260.0" promptText="Teléfono" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="140.0" />
+            <JFXDatePicker fx:id="DateAlta" defaultColor="#5267ae" layoutX="164.0" layoutY="235.0" prefHeight="31.0" prefWidth="254.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="200.0" />
+            <Label layoutX="14.0" layoutY="40.0" prefHeight="17.0" prefWidth="130.0" text="Nombre(s) :" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="110.0" prefHeight="17.0" prefWidth="130.0" text="Apellidos: " AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="180.0" prefHeight="17.0" prefWidth="122.0" text="Telefono:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="250.0" prefHeight="17.0" prefWidth="122.0" text="Fecha Alta:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="210.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="276.0" prefHeight="17.0" prefWidth="122.0" text="Última Compra: " AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="270.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="cbFacturacion" checkedColor="#0e4dfc" layoutX="63.0" layoutY="322.0" prefHeight="31.0" prefWidth="158.0" text="Facturación" AnchorPane.topAnchor="330.0" />
+            <JFXTextField fx:id="txtRFC" layoutX="160.0" layoutY="406.0" prefWidth="260.0" promptText="RFC" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="390.0" />
+            <JFXTextField fx:id="txtRazonSocial" layoutX="160.0" layoutY="467.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Razón Social" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="450.0" />
+            <Label layoutX="20.0" layoutY="387.0" prefHeight="17.0" prefWidth="100.0" text="RFC: " AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="400.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="447.0" prefHeight="17.0" prefWidth="130.0" text="Razón Social:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="460.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnAgregar" layoutX="20.0" layoutY="708.0" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #dbffe9;" text="Agregar" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" />
+            <JFXButton fx:id="btnEliminar" layoutX="245.0" layoutY="721.0" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #ffd2d5;" text="Eliminar" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="370.0" />
+            <JFXButton fx:id="btnModificar" layoutX="160.0" layoutY="713.0" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #fffae3;" text="Modificar" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="130.0" />
+            <JFXTextField fx:id="txtDireccion" layoutX="165.0" layoutY="513.0" prefHeight="30.0" prefWidth="260.0" promptText="Direccion" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="510.0" />
+            <Label layoutX="16.0" layoutY="517.0" prefHeight="20.0" prefWidth="100.0" text="Dirección:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="520.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="dateUltimaCompra" defaultColor="#5267ae" layoutX="163.0" layoutY="265.0" prefHeight="30.0" prefWidth="254.0" AnchorPane.topAnchor="260.0" />
+            <Label fx:id="lblCodigo" layoutX="115.0" layoutY="584.0" prefHeight="17.0" prefWidth="191.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="570.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="587.0" prefHeight="17.0" prefWidth="90.0" text="Código:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="580.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbStatus" layoutX="247.0" layoutY="333.0" prefHeight="25.0" prefWidth="130.0" promptText="Status" />
+            <Label fx:id="lblErrNombre" layoutX="14.0" layoutY="51.0" prefHeight="17.0" prefWidth="312.0" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="50.0" />
+            <Label fx:id="lblErrApellido" layoutX="6.0" layoutY="111.0" prefHeight="17.0" prefWidth="331.0" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="110.0" />
+            <Label fx:id="lblErrTelefono" layoutX="6.0" layoutY="171.0" prefHeight="17.0" prefWidth="312.0" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="170.0" />
+            <Label fx:id="lblErrRFc" layoutX="16.0" layoutY="421.0" prefHeight="17.0" prefWidth="200.0" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="420.0" />
+            <Label fx:id="lblErrRazonSocial" layoutX="16.0" layoutY="480.0" prefHeight="17.0" prefWidth="246.0" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="480.0" />
+            <Label fx:id="lblErrDireccion" layoutX="16.0" layoutY="541.0" prefHeight="17.0" prefWidth="284.0" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="540.0" />
+            <Label fx:id="lblErrAlta" layoutX="16.0" layoutY="231.0" prefHeight="17.0" prefWidth="246.0" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="230.0" />
+            <Label fx:id="lblErrUltimaCompra" layoutX="16.0" layoutY="290.0" prefHeight="17.0" prefWidth="312.0" text="Si deja vacia la ULTIMA COMPRA, tomará la fecha de alta" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="290.0" />
+            <Label fx:id="lblErrStatus" layoutX="227.0" layoutY="361.0" prefHeight="17.0" prefWidth="180.0" textFill="RED" />
+            <JFXButton fx:id="btnReiniciar" layoutX="240.0" layoutY="704.0" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #e8f6fe;" text="Reiniciar" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="250.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblDistribuidores" layoutX="479.0" layoutY="3.0" prefHeight="790.0" prefWidth="413.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="479.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="5.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="colApellido" prefWidth="77.0" text="Apellido" />
+            <TableColumn fx:id="colAlta" prefWidth="75.0" text="Alta" />
+            <TableColumn fx:id="colUltimaCompra" prefWidth="137.0" text="Ultima Compra" />
+            <TableColumn fx:id="colStatus" prefWidth="75.0" text="Status" />
+            <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Código" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

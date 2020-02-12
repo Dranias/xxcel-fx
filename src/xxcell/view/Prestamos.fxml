@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #FBE870;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.PrestamosController">
+   <children>
+      <TableView fx:id="tblPrestamos" layoutX="37.0" layoutY="36.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FED85D;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="150.0" text="Código" />
+          <TableColumn fx:id="colProcedencia" minWidth="0.0" prefWidth="92.0" text="Procedencia" />
+            <TableColumn fx:id="colDestino" prefWidth="108.0" text="Destino" />
+            <TableColumn fx:id="colFecha" prefWidth="75.0" text="Fecha" />
+            <TableColumn fx:id="colNotas" prefWidth="153.0" text="Notas" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtNotas" focusColor="#e77200" labelFloat="true" layoutX="252.0" layoutY="435.0" prefHeight="25.0" prefWidth="329.0" promptText="Notas" unFocusColor="#ffaa1d" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="15.0" />
+      <JFXTextField fx:id="txtCodigo" focusColor="#e77200" labelFloat="true" layoutX="251.0" layoutY="485.0" onKeyPressed="#KeyPressedTxtCodigo" prefHeight="25.0" prefWidth="335.0" promptText="Código" unFocusColor="#ffaa1d" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="15.0" />
+      <JFXButton fx:id="btnCancelar" layoutX="98.0" layoutY="551.0" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #F8D568;" text="Cancelar Prestamo" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="100.0" />
+      <JFXButton fx:id="btnSalir" layoutX="441.0" layoutY="551.0" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #FF3855;" text="Salir" textFill="WHITE" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="100.0" />
+      <Label fx:id="lblErrCodigo" alignment="CENTER" contentDisplay="TOP" layoutX="134.0" layoutY="518.0" prefHeight="17.0" prefWidth="325.0" textFill="RED" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="135.0" />
+      <DatePicker fx:id="DateInicio" layoutX="13.0" layoutY="485.0" prefHeight="25.0" prefWidth="150.0" promptText="Fecha" style="-fx-background-color: #F8D568;" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="15.0" />
+      <JFXButton fx:id="btnBuscar" layoutX="179.0" layoutY="485.0" style="-fx-background-color: #F8D568;" text="Buscar" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="180.0" />
+      <JFXButton fx:id="btncopiar" layoutY="574.0" onAction="#Actioncopiar" text=" " />
+   </children>
+</AnchorPane>

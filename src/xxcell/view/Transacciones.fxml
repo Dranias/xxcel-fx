@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #fff7b6;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.TransaccionesController">
+   <children>
+      <TableView fx:id="tblPrestamos" layoutX="14.0" layoutY="20.0" prefHeight="380.0" prefWidth="419.0" style="-fx-background-color: #fffdc8;" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="123.0" text="Codigo" />
+          <TableColumn fx:id="colCantidad" prefWidth="76.0" text="Cantidad" />
+            <TableColumn fx:id="colProcedencia" prefWidth="98.0" text="Procedencia" />
+            <TableColumn fx:id="colDestino" prefWidth="79.0" text="Destino" />
+            <TableColumn fx:id="colFecha" prefWidth="136.0" text="Fecha/Hora" />
+            <TableColumn fx:id="colNotas" prefWidth="207.0" text="Notas" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtCodigo" focusColor="#bc8d2b" labelFloat="true" layoutX="14.0" layoutY="319.0" maxWidth="300.0" minWidth="189.0" onMousePressed="#MPressedTxtCodProducto" prefHeight="45.0" prefWidth="240.0" promptText="Código" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="440.0" />
+      <JFXComboBox fx:id="cmbLocalDestino" layoutX="285.0" layoutY="403.0" prefHeight="25.0" prefWidth="189.0" promptText="Local Destino" AnchorPane.bottomAnchor="222.0" AnchorPane.rightAnchor="226.0" />
+      <JFXTextField fx:id="txtCantidad" focusColor="#bc8d2b" labelFloat="true" layoutX="15.0" layoutY="479.0" maxWidth="300.0" minWidth="225.0" prefHeight="43.0" prefWidth="240.0" promptText="Cantidad" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="440.0" />
+      <JFXTextField fx:id="txtNotas" focusColor="#bc8d2b" labelFloat="true" layoutX="526.0" layoutY="397.0" maxWidth="400.0" minWidth="394.0" prefHeight="43.0" prefWidth="400.0" promptText="Notas" AnchorPane.bottomAnchor="125.0" AnchorPane.rightAnchor="15.0" />
+      <JFXButton fx:id="btnTransaccion" layoutX="14.0" layoutY="365.0" prefHeight="35.0" prefWidth="140.0" style="-fx-background-color: #bc8d2b;" text="Transacción" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="15.0" />
+      <JFXButton fx:id="btnSalir" layoutX="444.0" layoutY="361.0" prefHeight="35.0" prefWidth="140.0" style="-fx-background-color: #ae2f26;" text="Salir" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="15.0" />
+      <JFXButton fx:id="btnCancelar" layoutX="176.0" layoutY="457.0" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #bc8f78;" text="Cancelar Prestamo" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" />
+      <Label fx:id="lblErrCodigo" layoutX="19.0" layoutY="430.0" prefHeight="21.0" prefWidth="238.0" AnchorPane.leftAnchor="15.0" />
+      <Label fx:id="lblErrCantidad" layoutX="19.0" layoutY="525.0" prefHeight="21.0" prefWidth="230.0" AnchorPane.leftAnchor="15.0" />
+      <Label fx:id="lblErrCmbLocalDestino" layoutX="342.0" layoutY="430.0" prefHeight="21.0" prefWidth="297.0" />
+      <Label fx:id="lblErrNotas" layoutX="300.0" layoutY="527.0" prefHeight="21.0" prefWidth="376.0" />
+      <JFXDatePicker fx:id="DateInicio" defaultColor="#bc8d2b" layoutX="502.0" layoutY="400.0" style="-fx-background-color: 000000;" />
+   </children>
+</AnchorPane>

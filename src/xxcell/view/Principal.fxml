@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.PrincipalController">
+   <children>
+      <BorderPane fx:id="borderPane">
+         <top>
+            <JFXToolbar style="-fx-background-color: #595959;" BorderPane.alignment="CENTER">
+               <left>
+                  <JFXHamburger fx:id="titleBurger" stylesheets="@../resources/ham.css" BorderPane.alignment="CENTER">
+                      <animation>
+                          <HamburgerBackArrowBasicTransition />
+                      </animation>
+                  </JFXHamburger>
+               </left>
+            </JFXToolbar>
+         </top>
+         <center>
+            <JFXDrawer fx:id="drawer" style="-fx-background-color: #ade2ff;" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Label fx:id="lblBottom" text="XXCELL - Punto de Venta" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

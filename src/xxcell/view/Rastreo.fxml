@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #FBAED2;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="xxcell.controller.RastreoController">
+   <children>
+      <JFXTextField fx:id="txtCodigo" focusColor="RED" labelFloat="true" layoutX="140.0" layoutY="59.0" onKeyPressed="#KeyPressedTxtCodigo" prefHeight="25.0" prefWidth="277.0" promptText="ID" unFocusColor="RED" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" />
+      <Label layoutX="323.0" layoutY="14.0" prefHeight="20.0" prefWidth="161.0" text="Inserte ID de producto: " textFill="#da2647" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="316.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblRastreo" layoutX="25.0" layoutY="137.0" prefHeight="635.0" prefWidth="751.0" style="-fx-background-color: #FF91A4;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="140.0">
+        <columns>
+          <TableColumn fx:id="colFolio" prefWidth="124.0" text="Folio" />
+          <TableColumn fx:id="colCantidad" prefWidth="135.0" text="Cantidad" />
+            <TableColumn fx:id="colFecha" prefWidth="125.0" text="Fecha" />
+            <TableColumn fx:id="colDescrip" prefWidth="365.0" text="Descripcion" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

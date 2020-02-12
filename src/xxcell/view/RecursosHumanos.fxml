@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxWidth="1.7976931348623157E308" style="-fx-background-color: #6B3298;" stylesheets="@../resources/sidemenu.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.RecursosHumanosController">
+   <children>
+      <JFXButton fx:id="AgregarEmp" accessibleText="AgregarEmpleado" layoutX="40.0" layoutY="80.0" maxHeight="-Infinity" onAction="#AddEmpleadoAction" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #A67ECE;" styleClass="text-button" stylesheets="@../resources/sidemenu.css" text="Agregar Empleado" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+      <JFXButton fx:id="Modificar" accessibleText="ModificarEmpleado" layoutX="343.0" layoutY="50.0" maxHeight="-Infinity" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #7FCCCC;" styleClass="text-button" text="Modificar RH" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="50.0" />
+      <JFXButton fx:id="Nominas" accessibleText="Nomina" layoutX="660.0" layoutY="80.0" maxHeight="-Infinity" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #AD1A68;" styleClass="text-button" text="Nominas" AnchorPane.leftAnchor="650.0" AnchorPane.topAnchor="50.0" />
+      <JFXButton fx:id="Sueldos" layoutX="40.0" layoutY="300.0" maxHeight="-Infinity" onAction="#VentanaSueldos" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #F4BA51;" styleClass="text-button" text="Sueldos" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="310.0" />
+      <JFXButton accessibleText="Distribuidores" layoutX="350.0" layoutY="300.0" maxHeight="-Infinity" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #FF65B0;" styleClass="text-button" text="Distribuidores" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="310.0" />
+   </children>
+</AnchorPane>

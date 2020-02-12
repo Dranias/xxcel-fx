@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #f1d79e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.SalidasPendientesController">
+   <children>
+      <TableView fx:id="tblSalidas" layoutX="14.0" layoutY="20.0" prefHeight="380.0" prefWidth="419.0" style="-fx-background-color: #fcedc5;" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="109.0" text="Codigo" />
+            <TableColumn fx:id="colProcedencia" prefWidth="102.0" text="Procedencia" />
+            <TableColumn fx:id="colNumEmpleado" prefWidth="130.0" text="Num. Empleado" />
+            <TableColumn fx:id="colFecha" prefWidth="122.0" text="Fecha/Hora" />
+            <TableColumn fx:id="colNotas" prefWidth="212.0" text="Notas" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtCodigo" focusColor="#ba782a" labelFloat="true" layoutX="14.0" layoutY="319.0" maxWidth="300.0" minWidth="189.0" onMousePressed="#MPressedTxtCodProducto" prefHeight="45.0" prefWidth="240.0" promptText="Código" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="440.0" />
+      <JFXTextField fx:id="txtNumEmpleado" focusColor="#ba782a" labelFloat="true" layoutX="508.0" layoutY="395.0" promptText="Numero de Empleado" AnchorPane.bottomAnchor="220.0" AnchorPane.rightAnchor="57.0" />
+      <JFXButton fx:id="btnRegistrarSalida" layoutX="14.0" layoutY="365.0" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #dec371;" text="Registrar Salida" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="15.0" />
+      <JFXButton fx:id="btnSalir" layoutX="444.0" layoutY="361.0" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #923830;" text="Salir" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="10.0" />
+      <JFXButton fx:id="btnAutorizar" layoutX="467.0" layoutY="487.0" prefHeight="33.0" prefWidth="189.0" style="-fx-background-color: #658d6d;" text="Autorizar salida" AnchorPane.bottomAnchor="130.0" AnchorPane.rightAnchor="30.0" />
+      <Label fx:id="lblErrCodigo" layoutX="19.0" layoutY="430.0" prefHeight="21.0" prefWidth="238.0" AnchorPane.leftAnchor="15.0" />
+      <Label fx:id="lblErrNumEmpleado" layoutX="465.0" layoutY="430.0" prefHeight="21.0" prefWidth="230.0" AnchorPane.leftAnchor="465.0" />
+      <Label fx:id="lblErrNotas" layoutX="100.0" layoutY="567.0" prefHeight="21.0" prefWidth="478.0" />
+      <JFXTextArea fx:id="txtNotas" focusColor="#ba782a" labelFloat="true" layoutX="10.0" layoutY="465.0" prefHeight="78.0" prefWidth="409.0" promptText="Motivo - Se lo mas especifico posible " style="-fx-background-color: #dec371;" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="460.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

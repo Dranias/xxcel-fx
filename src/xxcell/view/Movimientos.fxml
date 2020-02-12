@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E4D85D;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.MovimientosController">
+   <children>
+      <JFXButton fx:id="btnPrestamos" layoutX="55.0" layoutY="50.0" prefHeight="160.0" prefWidth="210.0" ripplerFill="#ffbf00" style="-fx-background-color: #F4BA51;" styleClass="text-button" stylesheets="@../resources/sidemenu.css" text="Prestamos" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="50.0" />
+      <JFXButton fx:id="btnCancelarPrestamo" accessibleText="Cancelar Prestamo" layoutX="284.0" layoutY="32.0" prefHeight="160.0" prefWidth="210.0" ripplerFill="#ffbf00" style="-fx-background-color: #FD5B78;" styleClass="text-button" stylesheets="@../resources/sidemenu.css" text="Cancelar Prestamo" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="50.0" />
+      <JFXButton fx:id="btnSalidas" accessibleText="Salidas" layoutX="284.0" layoutY="32.0" prefHeight="160.0" prefWidth="210.0" ripplerFill="#ffbf00" style="-fx-background-color: #b47360;" styleClass="text-button" stylesheets="@../resources/sidemenu.css" text="Salidas" AnchorPane.leftAnchor="650.0" AnchorPane.topAnchor="50.0" />
+      <JFXButton fx:id="btnMostrarPromos" layoutX="73.0" layoutY="270.0" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #A17A74;" styleClass="text-button" stylesheets="@../resources/sidemenu.css" text="Mostrar Promociones" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="250.0" />
+      <JFXButton fx:id="btnAgregarPromos" layoutX="350.0" layoutY="250.0" prefHeight="160.0" prefWidth="210.0" style="-fx-background-color: #E6BC5C;" styleClass="text-button" stylesheets="@../resources/sidemenu.css" text="Agregar promocion" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="250.0" />
+      
+      <JFXButton fx:id="btnEnvio58" layoutX="600.0" layoutY="500.0" maxHeight="1.7976931348623157E308" onAction="#ActionEnvio58" prefHeight="50.0" prefWidth="210.0" style="-fx-background-color: #6EAEA1" styleClass="text-button" text="Envio 58" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="600.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnEnvio64" layoutX="600.0" layoutY="500.0" maxHeight="1.7976931348623157E308" onAction="#ActionEnvio64" prefHeight="50.0" prefWidth="210.0" style="-fx-background-color: #6D9BC3;" styleClass="text-button" text="Envio 64" textFill="WHITE" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="600.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton><JFXButton fx:id="btnEnvio127" layoutX="600.0" layoutY="500.0" maxHeight="1.7976931348623157E308" onAction="#ActionEnvio127" prefHeight="50.0" prefWidth="210.0" style="-fx-background-color: #CD607E;" styleClass="text-button" text="Envio 127" textFill="WHITE" AnchorPane.leftAnchor="650.0" AnchorPane.topAnchor="600.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

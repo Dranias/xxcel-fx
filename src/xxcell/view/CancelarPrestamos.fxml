@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #E6BC5C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.CancelarPrestamosController">
+   <children>
+      <TableView fx:id="tblPrestamos" layoutX="200.0" layoutY="45.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FBE870;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="94.0" text="Codigo" />
+          <TableColumn fx:id="colProcedencia" prefWidth="74.0" text="Procedencia" />
+            <TableColumn fx:id="colDestino" prefWidth="57.0" text="Destino" />
+            <TableColumn fx:id="colFecha" prefWidth="130.0" text="Fecha" />
+            <TableColumn fx:id="colNotas" prefWidth="224.0" text="Notas" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtCodigo" focusColor="BLACK" labelFloat="true" layoutX="327.0" layoutY="529.0" onKeyPressed="#KeyPressedTxtCodigo" promptText="Codigo" unFocusColor="BLACK" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="15.0" />
+      <JFXComboBox fx:id="cmbNotas" focusColor="BLACK" layoutX="14.0" layoutY="485.0" prefHeight="25.0" prefWidth="218.0" promptText="Referencia" unFocusColor="BLACK" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="360.0" />
+      <Label fx:id="lblErrCodigo" layoutX="60.0" layoutY="549.0" prefHeight="25.0" prefWidth="361.0" textFill="RED" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font name="Gadugi Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnImprimir" layoutX="22.0" layoutY="550.0" style="-fx-background-color: #FBE870;" text="Imprimir" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" />
+   </children>
+</AnchorPane>

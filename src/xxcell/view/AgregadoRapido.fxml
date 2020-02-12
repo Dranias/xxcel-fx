@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #8DD9CC;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.AgregadoRapidoController">
+   <children>
+      <JFXTextField fx:id="txtCodigo" focusColor="#0081ab" labelFloat="true" layoutX="160.0" layoutY="90.0" onKeyPressed="#KeyPressedTxtCodigo" promptText="Codigo de Producto" unFocusColor="#0a7e8c" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font name="Serif Regular" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="lblProducto" alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="232.0" prefHeight="40.0" prefWidth="290.0" textAlignment="CENTER" textFill="#0c3897" textOverrun="CLIP" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblExistencia" alignment="CENTER" layoutX="259.0" layoutY="292.0" prefHeight="30.0" prefWidth="41.0" textFill="#122df8" AnchorPane.leftAnchor="259.0" AnchorPane.rightAnchor="100.0" />
+      <Label layoutX="81.0" layoutY="292.0" prefHeight="30.0" prefWidth="103.0" text="Cantidad Local : " />
+   </children>
+</AnchorPane>

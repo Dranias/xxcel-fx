@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1010.0" style="-fx-background-color: #F7CAC9;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.EstadisticasUtilidadController">
+   <children>
+      <JFXDatePicker fx:id="datePInicio" defaultColor="#b93a32" layoutX="596.0" layoutY="25.0" promptText="Fehcha Inicial" AnchorPane.rightAnchor="245.0" AnchorPane.topAnchor="25.0" />
+      <JFXDatePicker fx:id="datePFinal" defaultColor="#b93a32" layoutX="810.0" layoutY="25.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="25.0" />
+      <TableView fx:id="tblVentas" layoutX="14.0" layoutY="14.0" prefHeight="718.0" prefWidth="549.0" style="-fx-background-color: #cd6d71;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="25.0">
+        <columns>
+          <TableColumn fx:id="colFolio" prefWidth="75.0" text="Folio" />
+          <TableColumn fx:id="colCantidadProd" prefWidth="142.0" text="Cantidad Productos" />
+            <TableColumn fx:id="colPrecioVenta" prefWidth="151.0" text="Precio Venta" />
+            <TableColumn fx:id="colUtilidad" prefWidth="176.0" text="Utilidad" />
+        </columns>
+      </TableView>
+      <Label layoutX="599.0" layoutY="213.0" prefHeight="55.0" prefWidth="235.0" style="-fx-background-color: #cd6d71;" text="Cantidad de Venta:" textFill="WHITE" AnchorPane.bottomAnchor="500.0" AnchorPane.rightAnchor="190.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="595.0" layoutY="447.0" prefHeight="55.0" prefWidth="235.0" style="-fx-background-color: #cd6d71;" text="U T I L I D A D :" textFill="WHITE" AnchorPane.bottomAnchor="250.0" AnchorPane.rightAnchor="190.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAceptar" layoutX="615.0" layoutY="95.0" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #99ca85;" text="Aceptar" AnchorPane.topAnchor="100.0" />
+      <JFXButton fx:id="btnReiniciar" layoutX="835.0" layoutY="98.0" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #cd6d71;" text="Reiniciar" textFill="WHITE" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="100.0" />
+      <Label fx:id="lblVenta" layoutX="751.0" layoutY="318.0" prefHeight="65.0" prefWidth="180.0" AnchorPane.bottomAnchor="385.0" AnchorPane.rightAnchor="95.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="702.0" layoutY="307.0" prefHeight="65.0" prefWidth="30.0" text="\$" AnchorPane.bottomAnchor="385.0" AnchorPane.rightAnchor="295.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="702.0" layoutY="590.0" prefHeight="65.0" prefWidth="30.0" text="\$" AnchorPane.bottomAnchor="115.0" AnchorPane.rightAnchor="295.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUtilidad" layoutX="749.0" layoutY="604.0" prefHeight="65.0" prefWidth="180.0" AnchorPane.bottomAnchor="115.0" AnchorPane.rightAnchor="95.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

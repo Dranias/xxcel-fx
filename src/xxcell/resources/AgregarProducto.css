@@ -1,0 +1,10 @@
+font-face{
+    font-family: 'Conthrax Sb';
+    src: url ('conthrax-sb.ttf');
+}
+
+.text-button{
+    -fx-font-family: 'Conthrax Sb' ;
+    -fx-font-size: 13;
+    -fx-text-fill: #FFFFFF;
+}

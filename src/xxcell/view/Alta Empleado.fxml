@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="722.0" prefWidth="629.0" style="-fx-background-color: #FDD5B1;" stylesheets="@../resources/AgregarProducto.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.AltaEmpleadoController">
+   <children>
+      <JFXTextField fx:id="usuario" layoutX="16.0" layoutY="58.0" maxWidth="210.0" minWidth="210.0" prefHeight="31.0" prefWidth="210.0" promptText="Usuario" />
+      <JFXTextField fx:id="Contra" layoutX="16.0" layoutY="149.0" maxWidth="210.0" minWidth="210.0" prefHeight="31.0" prefWidth="210.0" promptText="ID" />
+      <JFXButton fx:id="Foto" layoutX="425.0" layoutY="189.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #D99A6C;" styleClass="text-button" text="Agregar Foto" textAlignment="CENTER" AnchorPane.rightAnchor="94.0" />
+      <JFXButton fx:id="Cancelar" layoutX="516.0" layoutY="667.0" style="-fx-background-color: #BF4F51;" styleClass="text-button" text="Regresar a RH" textAlignment="CENTER" textFill="#fcfcfc" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="13.0" />
+      <JFXTextField fx:id="txtNombre" layoutX="142.0" layoutY="244.0" AnchorPane.leftAnchor="142.0" />
+      <JFXTextField fx:id="txtApellido" layoutX="142.0" layoutY="292.0" AnchorPane.leftAnchor="142.0" />
+      <JFXTextField fx:id="txtDireccion" layoutX="136.0" layoutY="344.0" AnchorPane.leftAnchor="142.0" />
+      <JFXTextField fx:id="txtTelefono" layoutX="136.0" layoutY="392.0" promptText="2222-22-22-22" AnchorPane.leftAnchor="142.0" />
+      <JFXDatePicker fx:id="datepickContratacion" defaultColor="#d99a6c" editable="false" layoutX="136.0" layoutY="441.0" promptText="Seleccion una fecha" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="142.0" />
+      <JFXTextArea fx:id="txtareaReferencia" layoutX="12.0" layoutY="544.0" maxWidth="604.0" minWidth="226.0" prefHeight="107.0" prefWidth="604.0" promptText="Referencia" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="13.0" />
+      <Label layoutX="14.0" layoutY="251.0" text="Nombre: " AnchorPane.leftAnchor="14.0" />
+      <Label layoutX="76.0" layoutY="110.0" text="Contraseña">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="24.0" text="Usuario">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="299.0" text="Apellido" AnchorPane.leftAnchor="14.0" />
+      <Label layoutX="12.0" layoutY="347.0" text="Dirección" AnchorPane.leftAnchor="14.0" />
+      <Label layoutX="12.0" layoutY="395.0" text="Telefono" AnchorPane.leftAnchor="14.0" />
+      <JFXButton fx:id="Agregar" layoutX="14.0" layoutY="667.0" style="-fx-background-color: #D27D46;" styleClass="text-button" text="Agregar Empleado" textAlignment="CENTER" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="14.0" />
+      <JFXButton fx:id="btnIne" layoutX="360.0" layoutY="444.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #D99A6C;" styleClass="text-button" text="INE" textAlignment="CENTER" AnchorPane.bottomAnchor="253.0" AnchorPane.rightAnchor="204.0" />
+      <Label layoutX="5.0" layoutY="444.0" text="Contratación" AnchorPane.leftAnchor="14.0" />
+      <JFXComboBox fx:id="Nivel" layoutX="87.0" layoutY="201.0" promptText="Nivel" />
+      <ImageView fx:id="IneView" fitHeight="150.0" fitWidth="130.0" layoutX="328.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="300.0" AnchorPane.rightAnchor="171.0" />
+      <ImageView fx:id="FotoView" fitHeight="155.0" fitWidth="292.0" layoutX="405.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <Label fx:id="lblNombreError" layoutX="129.0" layoutY="271.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" AnchorPane.leftAnchor="129.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblApellidoError" layoutX="131.0" layoutY="320.0" prefHeight="15.0" prefWidth="149.0" textFill="RED" AnchorPane.leftAnchor="131.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDireccionError" layoutX="131.0" layoutY="367.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" AnchorPane.leftAnchor="131.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTelefonoError" layoutX="131.0" layoutY="420.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" AnchorPane.leftAnchor="131.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUsuarioError" layoutX="20.0" layoutY="89.0" prefHeight="17.0" prefWidth="244.0" textFill="#ff0202">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblContraseñaError" layoutX="20.0" layoutY="180.0" prefHeight="17.0" prefWidth="244.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNivelError" layoutX="70.0" layoutY="226.0" prefHeight="15.0" prefWidth="104.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblImageFotoError" layoutX="435.0" layoutY="172.0" prefHeight="17.0" prefWidth="164.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblImageIneError" layoutX="323.0" layoutY="425.0" prefHeight="17.0" prefWidth="164.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblErrorContratacion" layoutX="131.0" layoutY="464.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" AnchorPane.leftAnchor="131.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="495.0" text="Numero de empleado" AnchorPane.leftAnchor="14.0" />
+      <JFXTextField fx:id="txtNumEmpleado" layoutX="142.0" layoutY="488.0" />
+      <Label fx:id="lblErrorNumEmpleado" layoutX="129.0" layoutY="511.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" AnchorPane.leftAnchor="131.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="InePostView" fitHeight="150.0" fitWidth="130.0" layoutX="487.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="300.0" AnchorPane.rightAnchor="10.0" />
+      <JFXButton fx:id="btnInePost" layoutX="529.0" layoutY="445.0" prefHeight="23.0" prefWidth="77.0" style="-fx-background-color: #D99A6C;" styleClass="text-button" text="INE Post." textAlignment="CENTER" AnchorPane.bottomAnchor="250.0" AnchorPane.rightAnchor="30.0" />
+   </children>
+</AnchorPane>

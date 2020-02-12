@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.EstadisticasCostosController">
+   <left>
+      <AnchorPane prefHeight="718.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <BarChart fx:id="barChartCostos" layoutX="14.0" layoutY="103.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <TableView fx:id="tblCostos" prefHeight="698.0" prefWidth="447.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="113.0" text="Código" />
+          <TableColumn fx:id="colProducto" minWidth="0.0" prefWidth="187.0" text="Producto" />
+            <TableColumn fx:id="colCosto" minWidth="0.0" prefWidth="76.0" text="Costo" />
+            <TableColumn fx:id="colFecha" prefWidth="107.0" text="Fecha" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="1026.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnAceptar" layoutX="14.0" layoutY="13.0" prefHeight="25.0" prefWidth="150.0" text="Aceptar" AnchorPane.leftAnchor="50.0" />
+            <JFXButton fx:id="btnReiniciar" layoutX="871.0" layoutY="13.0" prefHeight="25.0" prefWidth="150.0" text="Reiniciar" AnchorPane.rightAnchor="50.0" />
+            <JFXTextField fx:id="txtProducto" layoutX="365.0" layoutY="10.0" maxWidth="347.0" minWidth="272.0" onMousePressed="#MPressedTxtCodProducto" prefHeight="25.0" prefWidth="350.0" promptText="Producto" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

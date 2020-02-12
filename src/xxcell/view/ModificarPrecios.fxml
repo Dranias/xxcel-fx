@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #9DE093;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xxcell.controller.ModificarPreciosController">
+   <children>
+      <JFXComboBox fx:id="cmbTipoprec" layoutX="31.0" layoutY="122.0" prefHeight="25.0" prefWidth="180.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="30.0" />
+      <JFXTextField fx:id="txtPrecio" focusColor="#00755e" labelFloat="true" layoutX="277.0" layoutY="35.0" prefHeight="25.0" prefWidth="246.0" promptText="Modificar Precio" unFocusColor="BLACK" AnchorPane.bottomAnchor="340.0" AnchorPane.rightAnchor="277.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtDistribuidor" focusColor="#00755e" labelFloat="true" layoutX="277.0" layoutY="175.0" prefHeight="25.0" prefWidth="246.0" promptText="Modificar Precio Distribuidor" AnchorPane.bottomAnchor="200.0" AnchorPane.rightAnchor="277.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCosto" focusColor="#00755e" labelFloat="true" layoutX="277.0" layoutY="300.0" prefHeight="25.0" prefWidth="246.0" promptText="Modificar Costo" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="277.0" />
+      <JFXButton fx:id="btnPrec" layoutX="650.0" layoutY="35.0" style="-fx-background-color: #00755e;" text="Aceptar" textFill="WHITE" AnchorPane.bottomAnchor="340.0" AnchorPane.rightAnchor="95.0" />
+      <JFXButton fx:id="btnDistribuidor" layoutX="653.0" layoutY="175.0" style="-fx-background-color: #00755e;" text="Aceptar" textFill="WHITE" AnchorPane.bottomAnchor="200.0" AnchorPane.rightAnchor="95.0" />
+      <JFXButton fx:id="btnCosto" layoutX="650.0" layoutY="300.0" style="-fx-background-color: #00755e;" text="Aceptar" textFill="WHITE" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="95.0" />
+      <Label layoutX="36.0" layoutY="86.0" prefHeight="17.0" prefWidth="169.0" text="Seleccione Tipo de producto" textFill="#136553" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="35.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbIdentificador" layoutX="93.0" layoutY="257.0" prefHeight="25.0" prefWidth="180.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="78.0" layoutY="240.0" prefHeight="17.0" prefWidth="180.0" text="     Seleccione Identificador" textFill="#136553" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="35.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

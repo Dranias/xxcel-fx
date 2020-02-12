@@ -1,0 +1,19 @@
+font-face{
+    font-family: 'Robotica';
+    src: url ('Robotica.ttf');
+}
+
+.text{
+    -fx-font-family: 'Robotica' ;
+    -fx-font-size: 14;
+}
+
+.text-button{
+    -fx-font-family: 'Robotica' ;
+    -fx-font-size: 20;
+    -fx-text-fill: #ffffff;
+}
+
+.anchor {
+    -fx-background-image:url('/xxcell/Images/tranparencia25.png');
+}
